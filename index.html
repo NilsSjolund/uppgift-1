@@ -1,11 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment 1 Nils sjölund</title>
+    <link rel="stylesheet" href="uppgift1.css" />
+    <script src="uppgift1.js"></script>
+  </head>
+  <body>
+    hi hows it going
+    <br />
+    <h1>
+      <img src="babiesgolden_400x300.jpeg" alt="" />
+    </h1>
+    <p>what cute dogs</p>
+    How many dogs are there?
+    <input
+      type="number"
+      id="number1"
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57;"
+    />
+    <br />
+    How many eyes do the dogs have together?
+    <input
+      type="number"
+      id="number2"
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57;"
+    />
+<button onclick="
+let input1 = document.getElementById ('number1')
+let input2 = document.getElementById ('number2')
+let svar =input1.valueAsNumber / input2.valueAsNumber
+if(isNaN(svar)  )
+alert ('you cant divide us!')
+else
+alert (svar)"> 
+divide</button>
+  </body>
 </html>
